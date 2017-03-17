@@ -14,12 +14,18 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewsComponent } from './news/news.component';
 import { NewsIdComponent } from './news-id/news-id.component';
+import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { CapabilitiesComponent } from './capabilities/capabilities.component';
+import { MediaComponent } from './media/media.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
 // определение маршрутов
 const appRoutes: Routes =[
-    { path: '', component: HomeComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'dashboard', component: DashboardComponent},
     { path: 'сareers', component: CareersComponent},
     { path: 'users', component: UsersComponent},
@@ -27,6 +33,12 @@ const appRoutes: Routes =[
     { path: 'news', component: NewsComponent},
     { path: 'news/:id', component: NewsIdComponent},
     { path: 'сontact', component: ContactComponent},
+    { path: 'header', component: HeaderComponent},
+    { path: 'about-us', component: AboutComponent},
+    { path: 'services', component: ServicesComponent},
+    { path: 'capabilities', component: CapabilitiesComponent},
+    { path: 'media', component: MediaComponent},
+    { path: 'contact-us', component: ContactUsComponent},
     { path: '**', component: NotFoundComponent }
 ];
 
@@ -42,7 +54,13 @@ const appRoutes: Routes =[
     CertificatesComponent,
     ContactComponent,
     NewsComponent,
-    NewsIdComponent
+    NewsIdComponent,
+    HeaderComponent,
+    AboutComponent,
+    ServicesComponent,
+    CapabilitiesComponent,
+    MediaComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

@@ -16,7 +16,7 @@ export class UsersServiceService{
     postData(obj: UsersList){
         const body = JSON.stringify(obj);
          
-        let headers = new Headers({ 'Content-Type': 'application/json;charset=utf-8' });
+        let headers = new Headers({ 'Content-Type': 'application/json;charset=utf-8', 'X-Acess-Token': '7f1649e8f391f4f851da7da56787e77276a94e0ff14f2670394f8ebf35f63d91' });
          
         return this.http.post('http://localhost:3000/api/users/', body, { headers: headers })
                         .map((resp:Response)=>resp.json())
