@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css?family=Khand');
+
+
+li{
+	list-style: none;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+	color: #fff;
+	font-size: 16px !important;
+}
+a, p{
+	color: #fff;
+	font-family: 'Khand', sans-serif;
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+a{
+	text-decoration: none;
+}
+.logo{
+	position: relative;
+	display: block;
+}
+.logo:after{
+    content: ' ';
+    position: absolute;
+    width: 176px;
+    right: 0;
+    top: -55px;
+    z-index: 333;
+    height: 156px;
+    background: url('../../assets/img/canada.png') no-repeat;
+
+}
+.header{
+	background-color: #595959;
+	width: 100%;
+	padding: 24px 0;
+    box-sizing: border-box;
+}
+.header-nav_list{
+	padding: 15px 0;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.header-nav_list li:first-child{
+    border-left: none;
+}
+.header-nav_list li{
+	float: left;
+	border-left: 1px solid #8b8b8b;
+	padding: 0px 12px;
+}
+.header-nav_list a{
+	
+	font-size: 18px;
+}
+.header-nav_list a:hover{
+    color: #1f92cc;
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-nav_list{
+  	display: none;
+  }
+.mobile-btn{
+	display: block !important;
+}
+.logo:after{
+	width: 150px;
+	background-size: 100%;
+	top: -42px;
+	right: 30px;
+}
+.header{
+    padding:10px;
+}
+.logo{
+	margin-top: 15px;
+}
+}
+
+@media screen and (max-width: 710px) {
+	.logo:after{
+		display: none;
+	}
+	.header{
+		height: 85px;
+	}
+	.mobile-btn{
+		margin-top: 0;
+	}
+	.logo{
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 365px) {
+     .logo img{
+     	width: 100%;
+     }
+     .mobile-btn{
+     	padding-right: 0;
+     	width: 45px !important;
+     }
+     .mobile-btn span{
+     	height: 4px !important;
+     }
+}
+
+.mobile-btn{
+	display: none;
+}
+
+#menu {
+  z-index: 9999;
+  bottom: 0;
+  background: #43a9d5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 100%;
+  padding-top: 80px;
+  text-align: center;
+  margin: 0;
+}
+#menu li a{
+	font-size: 18px;
+}
+#menu li a:hover{
+	color: #43a9d5;
+	border-radius: 0;
+}
+#menu .container{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+.mobile-btn{
+    width: 70px;
+    height: 70px;
+	position: relative;
+	background: none;
+	border:none;
+}
+.mobile-btn span {
+	display: block;
+	width: 100%;
+	height: 6px;
+	margin-top: 8px;
+	background: #fff;
+}
+.mobile-btn span:first-child {
+	margin-top: 0;
+}
+

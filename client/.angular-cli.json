@@ -19,9 +19,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+<<<<<<< HEAD
         "styles.css"
+=======
+        "styles.css",
+        "../node_modules/normalize.css/normalize.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/global.css"
       ],
-      "scripts": [],
+      "scripts": [
+          "../node_modules/jquery/dist/jquery.min.js",
+          "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+          "assets/js/mobile-nav.js"
+>>>>>>> 14d23382f32972d22b35151595fbad37d92674fd
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
