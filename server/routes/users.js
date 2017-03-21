@@ -6,7 +6,7 @@ const rootAdmin = require("../config/root-admin");
 function configure(router) {
 	router.route("/users")
 		.get((req, res) => {
-			if (!req.user.is_admin) {
+			if (!req.user.is_admin) { 
 				forbidden(res);
 				return;
 			}

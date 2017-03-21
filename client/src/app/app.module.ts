@@ -14,6 +14,8 @@ import { CertificatesComponent } from './certificates/certificates.component';
 import { ContactComponent } from './contact/contact.component';
 import { NewsComponent } from './news/news.component';
 import { NewsIdComponent } from './news-id/news-id.component';
+import { LoginComponent } from './login/login.component';
+import { CertificatesAdminComponent } from './certificates-admin/certificates-admin.component';
 
 
 
@@ -27,6 +29,10 @@ const appRoutes: Routes =[
     { path: 'news', component: NewsComponent},
     { path: 'news/:id', component: NewsIdComponent},
     { path: 'сontact', component: ContactComponent},
+    { path: 'login', component: LoginComponent},
+    { path: 'logout', component: LoginComponent},
+    { path: 'certificates', component: CertificatesComponent},
+    { path: 'certificates/admin', component: CertificatesAdminComponent},
     { path: '**', component: NotFoundComponent }
 ];
 
@@ -42,7 +48,9 @@ const appRoutes: Routes =[
     CertificatesComponent,
     ContactComponent,
     NewsComponent,
-    NewsIdComponent
+    NewsIdComponent,
+    LoginComponent,
+    CertificatesAdminComponent
   ],
   imports: [
     BrowserModule,

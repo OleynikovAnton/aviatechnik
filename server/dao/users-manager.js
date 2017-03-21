@@ -38,7 +38,7 @@ let usersManager = {
 		});
 	},
 
-	getAll: function() {
+	getAll: function() { 
 		return new Promise((resolve, reject) => {
 			database.connect(reject)
 				.then((db) => {	

@@ -1,0 +1,11 @@
+.users-list-wrap{
+	max-width: 800px;
+	margin: 60px auto 0 auto;
+	border: 1px solid #999;
+	padding: 30px 15px;
+	text-align: center;
+}
+.users-list-wrap input{
+	display: block;
+	margin: 10px auto;
+}

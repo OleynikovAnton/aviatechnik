@@ -1,4 +1,6 @@
 
+
+
 import { Component, OnInit } from '@angular/core';
 import { UsersServiceService} from './users-service.service';
 import { UsersList } from './users';
@@ -12,14 +14,16 @@ import { UsersList } from './users';
 
 
 export class UsersComponent {   
-    users: UsersList=new UsersList(); // данные вводимого пользователя
+    users: {};
+    // users: UsersList=new UsersList(); // данные вводимого пользователя
      
-    receivedUser: UsersList; // полученный пользователь
-    done: boolean = false;
+    // receivedUser: UsersList; // полученный пользователь
+    // done: boolean = false;
     constructor(private usersServiceService: UsersServiceService){}
-    submit(users){
-        this.usersServiceService.postData(users)
-                .subscribe((data) => {this.receivedUser=data; this.done=true;});
+
+    ngDoCheck() {
+        this.users = this.usersServiceService.getAllUsers();
+         console.log(this.users)
     }
 }
 

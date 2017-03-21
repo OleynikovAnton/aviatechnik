@@ -4,10 +4,13 @@
                         <a routerLink="">Home</a>
                         <a routerLink="/dashboard">Dashboard</a>
                         <a routerLink="/сareers">Careers</a>
-                        <a routerLink="/users">Users</a>
+                        <!--<a routerLink="/users">Users</a>-->
                         <a routerLink="/сertificates">Certificates</a>
                         <a routerLink="/news">News</a>
                         <a routerLink="/сontact">Contact</a>
+                        <a *ngIf="isAdmin()" routerLink="/users">Users</a>
+                        <a *ngIf="!isAdmin()" routerLink="/login">Login</a>
+                        <a *ngIf="isAdmin()" routerLink="/login" (click)="logout()" >Logout</a>{{isAdmin()}}
                     </nav>
                     
                </div>
